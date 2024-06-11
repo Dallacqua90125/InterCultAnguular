@@ -49,7 +49,7 @@ export class SignUpComponent {
     localStorage.setItem('users', JSON.stringify(users));
 
     this.showUsers(users);
-    this.router.navigate(['']);
+    this.router.navigate(['/login']);
   }
 
   showUsers(users: any[]): void {
