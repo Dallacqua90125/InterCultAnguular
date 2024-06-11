@@ -6,16 +6,18 @@
   justify-content: space-between;
   padding: 0;
   margin: 0; 
+
 }
 
 .nav-item {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .mundo {
  height: 8vh; 
- margin-left: 1vw;
+
 }
 
 .perfil-login {
@@ -23,6 +25,7 @@
   width: 8vh;
   border-radius: 50%;
   margin-bottom: 5px;
+  
 }
 
 .dropdown {
@@ -52,4 +55,5 @@
 .nav-item p{
   font-size: 20pt;
   color: aliceblue;
+  
 }
