@@ -14,7 +14,10 @@ import { DropBoxComponent } from './pages/components/drop-box/drop-box.component
 import { LoginDropdownComponent } from './pages/components/login-dropdown/login-dropdown.component';
 import { ProgramsComponent } from './pages/components/programs/programs.component';
 import { SearchBarComponent } from './pages/components/search-bar/search-bar.component';
-import { ProfileComponent } from './pages/profile/profile.component';
+import { EuaComponent } from './pages/eua/eua.component';
+import { UkComponent } from './pages/uk/uk.component';
+import { ItalyComponent } from './pages/italy/italy.component';
+import { FranceComponent } from './pages/france/france.component';
 
 
 @NgModule({
@@ -29,7 +32,10 @@ import { ProfileComponent } from './pages/profile/profile.component';
     LoginDropdownComponent,
     ProgramsComponent,
     SearchBarComponent,
-    ProfileComponent
+    EuaComponent,
+    UkComponent,
+    ItalyComponent,
+    FranceComponent
     
   ],
   imports: [
