@@ -11,8 +11,8 @@ import { ItalyComponent } from './pages/italy/italy.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
-  { path: '', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: '', component: HomeComponent },
   { path: 'content', component: ContentComponent },
   { path: 'eua', component: EuaComponent },
   { path: 'france', component: FranceComponent },

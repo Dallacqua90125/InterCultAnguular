@@ -1,0 +1,30 @@
+<app-nav-bar></app-nav-bar>
+<body>
+    <div class="container">
+        <div class="profile-sidebar">
+            <img [src]="imgprofile" style="height:20vh; width:10vw;" alt="">
+            <h2>Olá, Nome</h2>
+        </div>
+        <div class="profile-content">
+            <h2>Editar Perfil</h2>
+            <form>
+                <input type="text" name="nome" placeholder="Nome"> 
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="password" name="senha" placeholder="Senha">
+                <input type="password" name="confirmar-senha" placeholder="Confirmar Senha">
+               
+                <input type="submit" value="Salvar alterações">
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="favorites">
+            <h3>Programas Favoritos <span style="color: red;">❤️</span></h3>
+            <div class="image-container">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>

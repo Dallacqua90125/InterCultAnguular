@@ -21,7 +21,8 @@ body {
     padding: 2vh 2vw;
 }
 .main .title {
-    background-image:url('/../assets/paris.jpg') ;
+    position: relative;
+    background-image: url('/../assets/uk.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +36,20 @@ body {
     font-size: 6vh;
     margin-bottom: 2vh;
     font-weight: bold;
-}
+  }
+  
+  .main .title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    z-index: -1; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    filter: brightness(0.75); 
+  }
 .main .details {
     display: flex;
     justify-content: space-between;

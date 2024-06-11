@@ -14,13 +14,10 @@ export class HomeComponent {
   imgFranca: string =  'assets/franca.png';
   imgItalia: string =  'assets/italiaaa.png';
   imgUK: string =  'assets/grabretanha.png';
-  currentUser: string = '';
+
 
   constructor() { }
 
-  ngOnInit(): void {
-    this.currentUser = localStorage.getItem('currentUserName') || ''; 
-  }
 
 
 }

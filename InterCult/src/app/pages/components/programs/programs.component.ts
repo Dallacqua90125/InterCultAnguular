@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './programs.component.css'
 })
 export class ProgramsComponent {
-
+  imgcidade1: string =  'assets/vancouver4.jpg';
+  imgcidade2: string =  'assets/roma.jpg';
+  imgcidade3: string =  'assets/paris.jpg';
+  imgcidade4: string =  'assets/uk.jpg';
+  imgcidade5: string =  'assets/orlando.jpg';
 }

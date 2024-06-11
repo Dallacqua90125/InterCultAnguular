@@ -30,7 +30,7 @@ export class LoginComponent {
     if (user) {
       alert("Login bem-sucedido");
       localStorage.setItem('currentUserName', user.name); 
-      this.router.navigate(['home']);
+      this.router.navigate(['']);
     } else {
       alert("Credenciais inválidas");
     }
