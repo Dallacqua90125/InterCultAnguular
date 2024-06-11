@@ -8,8 +8,13 @@ import { Component } from '@angular/core';
 export class LoginDropdownComponent {
   perfil: string = 'assets/icone.png';
   isOpen = false;
+  currentUser: string = 'Login'
 
   toggleDropdown() {
     this.isOpen = !this.isOpen;
+  }
+
+  ngOnInit(): void {
+    this.currentUser = localStorage.getItem('currentUserName') || ''; 
   }
 }

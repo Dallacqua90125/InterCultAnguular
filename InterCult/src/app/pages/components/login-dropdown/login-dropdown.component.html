@@ -1,6 +1,6 @@
 <div class="dropdown">
     <button class="dropbtn" (click)="toggleDropdown()">  
-        <p>Login</p> 
+        <p>{{ currentUser }}</p> 
         <img [src]="perfil" class="dropbox">
     </button>
     <div class="dropdown-content" [class.show]="isOpen">
