@@ -21,7 +21,6 @@ export class ProfileComponent {
   
   constructor(private router: Router) {
     this.loadCurrentUser();
-    
   }
 
   loadCurrentUser() {

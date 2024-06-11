@@ -4,7 +4,8 @@
   </li>
   <li class="nav-item" style="width: 50%;">
     <p>InterCult</p>
-    <a [routerLink]="['/']"><img [src]="logo" alt="" class="mundo"></a>
+    <img [src]="logo" alt="" class="mundo"  *ngIf="!disableLogoImg">
+    <a [routerLink]="['/']" *ngIf="!disableLogo"><img [src]="logo" alt="" class="mundo"></a>
   </li>
   <li class="nav-item" *ngIf="!disableDropdowns">
     <app-login-dropdown></app-login-dropdown>

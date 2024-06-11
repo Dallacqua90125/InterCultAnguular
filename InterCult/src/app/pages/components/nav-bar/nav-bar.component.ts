@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,4 +9,6 @@ export class NavBarComponent {
   dropbox: string =  'assets/listras.png';
   logo: string =  'assets/pula.png';
   @Input() disableDropdowns: boolean = false;
+  @Input() disableLogo: boolean = false;
+  @Input() disableLogoImg: boolean = false;
 }

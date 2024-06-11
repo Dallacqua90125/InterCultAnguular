@@ -125,6 +125,28 @@ body {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+.button2{
+    text-decoration: none;
+    background-color: #b5a905; /* Azul */
+    color: white; /* Texto branco */
+    border: none;
+    padding: 2vh 4vw; /* Altura e largura usando vh e vw */
+    font-size: 2vh; /* Tamanho da fonte usando vh */
+    border-radius: 1vh; /* Bordas arredondadas usando vh */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.button2:hover {
+    background-color: #8d8403; /* Azul mais escuro */
+    transform: scale(1.05);
+}
+
+.button2:active {
+    background-color: #766e02; /* Azul ainda mais escuro */
+    transform: scale(0.95);
+}
 .button:hover {
     background-color: #0056b3; /* Azul mais escuro */
     transform: scale(1.05);
@@ -134,6 +156,8 @@ body {
     background-color: #004494; /* Azul ainda mais escuro */
     transform: scale(0.95);
 }
+
+
 
 .a {
     text-decoration: none;

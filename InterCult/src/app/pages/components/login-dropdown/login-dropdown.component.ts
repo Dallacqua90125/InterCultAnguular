@@ -33,7 +33,7 @@ export class LoginDropdownComponent implements OnInit {
     if (this.currentUser === 'Login') {
       this.loginTxt = 'Sign up';
     } else {
-      this.loginTxt = 'Log Out';
+      this.loginTxt = 'Trocar conta';
     }
   }
 }
