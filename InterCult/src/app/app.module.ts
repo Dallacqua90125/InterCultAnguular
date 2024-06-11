@@ -18,6 +18,7 @@ import { EuaComponent } from './pages/eua/eua.component';
 import { UkComponent } from './pages/uk/uk.component';
 import { ItalyComponent } from './pages/italy/italy.component';
 import { FranceComponent } from './pages/france/france.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { FranceComponent } from './pages/france/france.component';
     EuaComponent,
     UkComponent,
     ItalyComponent,
-    FranceComponent
+    FranceComponent,
+    ProfileComponent
     
   ],
   imports: [

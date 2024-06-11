@@ -8,6 +8,7 @@ import { EuaComponent } from './pages/eua/eua.component';
 import { FranceComponent } from './pages/france/france.component';
 import { UkComponent } from './pages/uk/uk.component';
 import { ItalyComponent } from './pages/italy/italy.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'eua', component: EuaComponent },
   { path: 'france', component: FranceComponent },
   { path: 'uk', component: UkComponent },
-  { path: 'italy', component: ItalyComponent }
+  { path: 'italy', component: ItalyComponent },
+  { path:'profile', component: ProfileComponent }
 ];
 
 @NgModule({
