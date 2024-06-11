@@ -14,6 +14,7 @@ import { DropBoxComponent } from './pages/components/drop-box/drop-box.component
 import { LoginDropdownComponent } from './pages/components/login-dropdown/login-dropdown.component';
 import { ProgramsComponent } from './pages/components/programs/programs.component';
 import { SearchBarComponent } from './pages/components/search-bar/search-bar.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { SearchBarComponent } from './pages/components/search-bar/search-bar.com
     DropBoxComponent,
     LoginDropdownComponent,
     ProgramsComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    ProfileComponent
     
   ],
   imports: [
