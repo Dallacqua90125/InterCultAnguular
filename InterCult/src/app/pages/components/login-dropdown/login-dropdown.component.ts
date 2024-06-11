@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-login-dropdown',
@@ -10,6 +10,14 @@ export class LoginDropdownComponent implements OnInit {
   isOpen = false;
   currentUser: string = 'Login';
   loginTxt: string = '';
+  
+  @HostListener('document:click', ['$event'])
+  closeDropdown(event: Event) {
+    const target = event.target as HTMLElement;
+    if (!target.closest('.dropdown')) {
+      this.isOpen = false;
+    }
+  }
 
   ngOnInit(): void {
     const storedUserName = localStorage.getItem('currentUserName');
