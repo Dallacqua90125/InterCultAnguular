@@ -11,4 +11,5 @@ export class ProgramsComponent {
   imgcidade3: string =  'assets/paris.jpg';
   imgcidade4: string =  'assets/uk.jpg';
   imgcidade5: string =  'assets/orlando.jpg';
+  imgpaisagem: string =  'assets/image.png';
 }
