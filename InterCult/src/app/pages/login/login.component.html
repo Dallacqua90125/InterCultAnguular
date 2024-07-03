@@ -1,20 +1,27 @@
 <app-nav-bar [disableDropdowns]="true" [disableLogo]='true' style="width: 20%; align-items: center;"></app-nav-bar>
-  <div class="container" style="overflow: hidden;position: flex;">
-  <div class="box" style="text-align: center;">
-    <img [src]="imgLogin" alt="" style="width:30%;"/> <h4><b style="color: #001b5e;">LOGIN</b></h4>
-    <div style= "width: 100%; justify-items: center; text-align: center;" >
-     
-      <div class="form-group" style="text-align:left; margin-bottom:2%;">
-        <label for="exampleInputEmail1">Email</label>
-        <input class="col-xs-3" type="text" [(ngModel)]="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu Email"required>
+<div class="container" id="container">
+  <div class="form-container sign-in-container">
+    <div class = "form">
+      <h1>Login</h1>
+
+      <input type="email" [(ngModel)]="username"  placeholder="Email" required>
+      <input [(ngModel)]="password" type="password" placeholder="Senha" required>
+      <a href="#">Esqueceu sua senha?</a>
+      
+      <button type="button" (click)="login()" [disabled]="!username || !password" >ENTRAR</button>
+      <div id="google-btn" style="  margin-top: 6%; margin-bottom: 4%;">
+
       </div>
-      <div class="form-group" style="text-align: left;">
-        <label for="exampleInputPassword1">Senha</label>
-        <input type="password" [(ngModel)]="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha"required>
+  </div>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-right">
+        <h1>Não possui conta?</h1>
+        <p>Clique no botão abaixo para acessar nossa aba de cadastro!</p>
+        <button class="ghost" id="signUp" routerLink="/sign-up">Cadastre-se</button>
       </div>
-      <br>
-      <button type="button" (click)="login()" class="btn btn-primary" id="buttom;" [disabled]="!username || !password" style="width: 30%;">ENTRAR</button> <br> <br>
-      <a routerLink="/sign-up" style="align-items:right;">Não possui conta?</a>
     </div>
   </div>
+</div>
 
