@@ -1,6 +1,6 @@
 .nav {
   height: 8vh; 
-  background-color:#001b5e;
+  background-color:#004aad;
   display: flex;
   align-items: center; 
   justify-content: space-between;
@@ -34,7 +34,7 @@
 
 .dropbox {
   height: 8vh; 
-  background-color:#001b5e;
+  background-color:#004aad;
 }
 
 .nav-item.dropdown {
@@ -61,4 +61,5 @@
   color: white;
   margin: 0 2vw;
   text-decoration: none;
+  font-size: 2.5vh;
 }
